@@ -7,10 +7,10 @@ exe = EXE( pyz,
           a.binaries,
           a.zipfiles,
           a.datas,
-          name=os.path.join('dist', 'GDH.exe'),
+          name=os.path.join('dist', 'GDH2.exe'),
           debug=False,
           strip=False,
           upx=True,
           console=False , icon='c:\\QQProtect.ico')
 app = BUNDLE(exe,
-             name=os.path.join('dist', 'GDH.exe.app'))
+             name=os.path.join('dist', 'GDH2.exe.app'))

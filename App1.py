@@ -2,8 +2,8 @@
 #Boa:App:BoaApp
 
 import wx
-
 import Frame1
+import os
 
 modules ={'Frame1': [1, 'Main frame of Application', u'Frame1.py']}
 
@@ -15,6 +15,8 @@ class BoaApp(wx.App):
         return True
 
 def main():
+	
+
     application = BoaApp(0)
     application.MainLoop()
 

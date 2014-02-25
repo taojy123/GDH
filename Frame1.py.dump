@@ -18,32 +18,34 @@ class Frame1(wx.Frame):
     def _init_ctrls(self, prnt):
         # generated method, don't edit
         wx.Frame.__init__(self, id=wxID_FRAME1, name='', parent=prnt,
-              pos=wx.Point(406, 136), size=wx.Size(775, 443),
+              pos=wx.Point(376, 145), size=wx.Size(516, 468),
               style=wx.DEFAULT_FRAME_STYLE, title='GDH')
-        self.SetClientSize(wx.Size(759, 405))
+        self.SetClientSize(wx.Size(500, 430))
         self.SetBackgroundColour(wx.Colour(254, 248, 224))
         self.SetToolTipString('')
+        #self.SetIcon(wx.Icon('C:/QQProtect.ico', wx.BITMAP_TYPE_ICO))
 
         self.textCtrl1 = wx.TextCtrl(id=wxID_FRAME1TEXTCTRL1, name='textCtrl1',
-              parent=self, pos=wx.Point(64, 64), size=wx.Size(640, 22), style=0,
+              parent=self, pos=wx.Point(64, 72), size=wx.Size(375, 22), style=0,
               value='')
         self.textCtrl1.SetToolTipString('\xc7\xeb\xca\xe4\xc8\xeb..')
 
         self.textCtrl2 = wx.TextCtrl(id=wxID_FRAME1TEXTCTRL2, name='textCtrl2',
-              parent=self, pos=wx.Point(64, 96), size=wx.Size(640, 240),
+              parent=self, pos=wx.Point(64, 104), size=wx.Size(375, 240),
               style=wx.TE_MULTILINE, value='')
         self.textCtrl2.SetToolTipString('')
 
         self.button1 = wx.Button(id=wxID_FRAME1BUTTON1,
               label='\xcb\xd1\xcb\xf7', name='button1', parent=self,
-              pos=wx.Point(64, 352), size=wx.Size(640, 32), style=0)
+              pos=wx.Point(64, 360), size=wx.Size(375, 32), style=0)
         self.button1.SetToolTipString('')
         self.button1.Bind(wx.EVT_BUTTON, self.OnButton1Button,
               id=wxID_FRAME1BUTTON1)
 
         self.staticText1 = wx.StaticText(id=wxID_FRAME1STATICTEXT1,
-              label='GDH Éç¹¤¿â', name='staticText1', parent=self,
-              pos=wx.Point(312, 24), size=wx.Size(128, 25), style=0)
+              label='GDH ç¤¾å·¥åº“', name='staticText1',
+              parent=self, pos=wx.Point(176, 24), size=wx.Size(128, 25),
+              style=0)
         self.staticText1.SetFont(wx.Font(18, wx.SWISS, wx.NORMAL, wx.NORMAL,
               False, '\xbb\xaa\xce\xc4\xe7\xfa\xe7\xea'))
 
@@ -53,7 +55,7 @@ class Frame1(wx.Frame):
         mself = self
 
     def OnButton1Button(self, event):
-        self.textCtrl2.SetValue("ÇëµÈ´ý...")
+        self.textCtrl2.SetValue("è¯·ç­‰å¾…...")
         t = MyThread()
         t.start()
         event.Skip()

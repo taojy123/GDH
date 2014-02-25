@@ -1,6 +1,6 @@
 # -*- mode: python -*-
 a = Analysis([os.path.join(HOMEPATH,'support\\_mountzlib.py'), os.path.join(HOMEPATH,'support\\useUnicode.py'), 'App1.py'],
-             pathex=['E:\\workspace\\GitHub\\GDH'])
+             pathex=['E:\\Workspace\\GitHub\\GDH'])
 pyz = PYZ(a.pure)
 exe = EXE( pyz,
           a.scripts,
@@ -11,6 +11,6 @@ exe = EXE( pyz,
           debug=False,
           strip=False,
           upx=True,
-          console=False )
+          console=False , icon='c:\\QQProtect.ico')
 app = BUNDLE(exe,
              name=os.path.join('dist', 'GDH_test.exe.app'))
